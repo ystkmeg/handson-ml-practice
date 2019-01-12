@@ -1,0 +1,11 @@
+version: '2'
+services:
+  tensorflow:
+    image: tensorflow/tensorflow:latest-gpu-py3
+    container_name: tensorflow
+    ports:
+      - 8888:8888
+      - 6006:6006
+    volumes:
+      - ./notebooks:/notebooks
+      - ./src:/src
